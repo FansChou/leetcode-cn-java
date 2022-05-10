@@ -4,7 +4,7 @@ import lombok.EqualsAndHashCode;
 
 /**
  * 链表节点
- * @author fan
+ * @author fanzhou
  */
 @EqualsAndHashCode
 public class ListNode {
