@@ -1,9 +1,12 @@
 package com.fanschou.leetcodecn.base;
 
+import lombok.EqualsAndHashCode;
+
 /**
  * 树节点
  * @author fanzhou
  */
+@EqualsAndHashCode
 public class TreeNode {
 
     public int val;
