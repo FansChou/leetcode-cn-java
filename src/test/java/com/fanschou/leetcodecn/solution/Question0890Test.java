@@ -13,9 +13,7 @@ class Question0890Test {
 
     @Test
     void findAndReplacePattern() {
-        List<String> result = new ArrayList<>();
-        result.add("mee");
-        result.add("aqq");
-        assertEquals(result, question0890.findAndReplacePattern(new String[]{"abc","deq","mee","aqq","dkd","ccc"}, "abb"));
+
+        assertEquals(List.of("mee", "aqq"), question0890.findAndReplacePattern(new String[]{"abc","deq","mee","aqq","dkd","ccc"}, "abb"));
     }
 }

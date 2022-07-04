@@ -15,32 +15,13 @@ class Question0078Test {
     void subsets(){
         List<List<Integer>> result = new ArrayList<>();
         //输出：[[],[1],[2],[1,2],[3],[1,3],[2,3],[1,2,3]]
-        result.add(new ArrayList<>(){{
-            add(1);
-            add(2);
-            add(3);
-        }});
-        result.add(new ArrayList<>(){{
-            add(1);
-            add(2);
-        }});
-        result.add(new ArrayList<>(){{
-            add(1);
-            add(3);
-        }});
-        result.add(new ArrayList<>(){{
-            add(1);
-        }});
-        result.add(new ArrayList<>(){{
-            add(2);
-            add(3);
-        }});
-        result.add(new ArrayList<>(){{
-            add(2);
-        }});
-        result.add(new ArrayList<>(){{
-            add(3);
-        }});
+        result.add(List.of(1, 2, 3));
+        result.add(List.of(1, 2));
+        result.add(List.of(1, 3));
+        result.add(List.of(1));
+        result.add(List.of(2, 3));
+        result.add(List.of(2));
+        result.add(List.of(3));
         result.add(new ArrayList<>());
         assertEquals(result, question0078.subsets(new int[]{1,2,3}));
     }

@@ -13,15 +13,8 @@ class Question0022Test {
 
     @Test
     void generateParenthesis() {
-        List<String> res = new ArrayList<>();
-        res.add("((()))");
-        res.add("(()())");
-        res.add("(())()");
-        res.add("()(())");
-        res.add("()()()");
-        assertEquals(res, question0022.generateParenthesis(3));
-        res.clear();
-        res.add("()");
-        assertEquals(res, question0022.generateParenthesis(1));
+
+        assertEquals(List.of("((()))", "(()())", "(())()", "()(())", "()()()"), question0022.generateParenthesis(3));
+        assertEquals(List.of("()"), question0022.generateParenthesis(1));
     }
 }

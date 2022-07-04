@@ -17,18 +17,12 @@ class Question0515Test {
         TreeNode root = new TreeNode(1,
                 new TreeNode(3, new TreeNode(5), new TreeNode(3)),
                 new TreeNode(2, null, new TreeNode(9)));
-        List<Integer> result = new ArrayList<>();
-        result.add(1);
-        result.add(3);
-        result.add(9);
-        assertEquals(result, question0515.largestValues(root));
 
-        result.clear();
-        result.add(1);
-        result.add(3);
+        assertEquals(List.of(1, 3, 9), question0515.largestValues(root));
+
         root = new TreeNode(1,
                 new TreeNode(2),
                 new TreeNode(3));
-        assertEquals(result, question0515.largestValues(root));
+        assertEquals(List.of(1, 3), question0515.largestValues(root));
     }
 }

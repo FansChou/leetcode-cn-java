@@ -17,10 +17,6 @@ class Question0094Test {
         TreeNode right = new TreeNode(2, new TreeNode(3), null);
         TreeNode root = new TreeNode(1, null, right);
 
-        List<Integer> results = new ArrayList<>();
-        results.add(1);
-        results.add(3);
-        results.add(2);
-        assertEquals(results, question0094.inorderTraversal(root));
+        assertEquals(List.of(1, 3, 2), question0094.inorderTraversal(root));
     }
 }
