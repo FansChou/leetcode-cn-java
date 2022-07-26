@@ -8,7 +8,7 @@ import static org.junit.jupiter.api.Assertions.assertEquals;
 class Question0919Test {
 
     @Test
-    void minFlipsMonoIncr() {
+    void cBTInserter() {
         TreeNode root = new TreeNode(1, new TreeNode(2), null);
         Question0919.CBTInserter cBTInserter = new Question0919.CBTInserter(root);
         assertEquals(1, cBTInserter.insert(3));
