@@ -10,11 +10,11 @@
 
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-        <maven.compiler.source>17</maven.compiler.source>
+        <maven.compiler.source>21</maven.compiler.source>
         <maven.compiler.target>${maven.compiler.source}</maven.compiler.target>
 
-        <lombok.version>1.18.24</lombok.version>
-        <junit.version>5.8.2</junit.version>
+        <lombok.version>1.18.38</lombok.version>
+        <junit.version>5.13.3</junit.version>
     </properties>
 
     <dependencyManagement>
