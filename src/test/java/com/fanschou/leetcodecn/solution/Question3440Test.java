@@ -9,7 +9,7 @@ class Question3440Test {
     Question3440 question3440 = new Question3440();
 
     @Test
-    void maxAscendingSum() {
+    void maxFreeTime() {
         assertEquals(2, question3440.maxFreeTime(5, new int[]{1,3}, new int[]{2,5}));
         assertEquals(7, question3440.maxFreeTime(10, new int[]{0,7,9}, new int[]{1,8,10}));
         assertEquals(6, question3440.maxFreeTime(10, new int[]{0,3,7,9}, new int[]{1,4,8,10}));
