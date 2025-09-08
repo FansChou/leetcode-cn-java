@@ -30,4 +30,16 @@ public class ListNode {
 
         return head.next;
     }
+
+    public static ListNode[] createNodeByArrays(int[][] arrays){
+
+        ListNode[] result = new ListNode[arrays.length];
+
+        for (int i = 0; i < arrays.length; i++) {
+            ListNode node = ListNode.createNodeByArrays(arrays[i]);
+            result[i] = node;
+        }
+
+        return result;
+    }
 }
